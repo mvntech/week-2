@@ -5,7 +5,7 @@ function useFetch(url) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // declaring the custom hook with a callback function
+ // custom hook to fetch data from the provided URL using useEffect
   useEffect(() => {
     if (!url) return;
 
